@@ -1,0 +1,127 @@
+.flex-group {
+  > * {
+    flex: none;
+  }
+
+  // see actions-summary example
+  &.flex-strip-margins > * {
+    margin-right: 0;
+  }
+
+  &.flex-start {
+    justify-content: flex-start;
+
+    > * {
+      flex: none;
+    }
+  }
+
+  &.flex-end {
+    justify-content: flex-end;
+
+    > * {
+      flex: none !important;
+    }
+  }
+
+  &.space-between {
+    justify-content: space-between;
+
+    > * {
+      flex: none;
+    }
+  }
+
+  &.flex-column {
+    flex-direction: column;
+  }
+
+  &.flex-nowrap {
+    flex-wrap: nowrap;
+  }
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  > div, > button, > a {
+    flex: none;
+    margin-right: .75rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  > dl {
+    flex: none;
+    margin-right: 3rem !important;
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-stretch {
+  display: flex;
+  align-items: stretch;
+}
+
+.flex-top {
+  align-items: flex-start!important;
+}
+
+.flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-none {
+  flex: none!important;
+}
+
+@media screen and (min-width: _breakpoint(breakpoint-320)) {
+  .flex-group, 
+  .inline-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    &.flex-column {
+      > * {
+        flex: none;
+        margin-right: .75rem;
+        &:last-child {
+          margin-right: .75rem;
+        }
+      }
+    }
+
+    > * {
+      flex: 1;
+      margin-right: .75rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.flex-2 {
+        flex: 2;
+      }
+      &.flex-3 {
+        flex: 3;
+      }
+      &.flex-4 {
+        flex: 4;
+      }
+      &.flex-5 {
+        flex: 5;
+      }
+    }
+  }
+}
+

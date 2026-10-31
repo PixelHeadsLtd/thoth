@@ -1,120 +1,70 @@
+
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import treeOfLife from './assets/images/tree-of-life.svg'
+import KnightOfWands from './components/KnightOfWands'
+
+import './scss/app.scss'
+import './scss/flex.scss'
+import './scss/fonts.scss'
+import './scss/typography.scss'
+import './scss/nav.scss'
+import './scss/cards.scss'
+import './scss/vars.scss'
+import './scss/mini-tree.scss'
+import './scss/tetragrammaton.scss'
+import './scss/colour-switching.scss'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activePage, setActivePage] = useState('tree-of-life')
+
+  const pages = [
+    { id: 'tree-of-life', label: 'Tree of Life' },
+    { id: 'knight-of-wands', label: 'Knight of Wands' }
+  ]
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
+      <nav className="card-nav" aria-label="Page navigation">
+        <h2>Choose a Card</h2>
+        <select
+          value={activePage}
+          onChange={(e) => setActivePage(e.target.value)}
+          aria-label="Select a Tarot card"
         >
-          Count is {count}
-        </button>
+          {pages.map((page) => (
+            <option key={page.id} value={page.id}>
+              {page.label}
+            </option>
+          ))}
+        </select>
+      </nav>
+
+      <section className="wrapper flex-group flex-center">
+
+        <article
+          className={`tree-of-life flex-group flex-center ${
+            activePage === 'tree-of-life' ? 'active' : ''
+          }`}
+          inert={activePage !== 'tree-of-life'}
+        >
+          <div>
+            <h1 className="italic">The Qabalistic</h1>
+            <h2 className="bold">The Tree of Life</h2>
+          </div>
+          <img src={treeOfLife} alt="" />
+        </article>
+        
+        {/* Knight of Wands */}
+        <article
+          className={`knight-of-wands flex-group flex-nowrap ${
+            activePage === 'knight-of-wands' ? 'active' : ''
+          }`}
+          inert={activePage !== 'knight-of-wands'}
+        >
+          <KnightOfWands />
+        </article>
+
       </section>
-
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
     </>
   )
 }

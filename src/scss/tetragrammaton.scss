@@ -1,0 +1,15 @@
+@use './vars' as *;
+
+.tetragrammaton {
+    div {
+        margin-right: 0.5vw;
+
+        &:last-child {
+            margin-right: 0
+        }
+
+        path {
+            fill: #8C6E4E;
+        }
+    }
+}

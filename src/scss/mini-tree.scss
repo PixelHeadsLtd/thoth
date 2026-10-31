@@ -1,0 +1,87 @@
+@use './vars' as *;
+
+.mini-tree-container {
+    display: flex;
+    width: fit-content;
+    height: 7vw;
+    margin: 1.5rem 0 0 0;
+
+    .mini-tree-wrapper {
+        width: fit-content;
+        display: flex;
+        margin-right: 0.5vw;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .tree-info {
+            display: inline-block;
+            margin: 0.5rem 0 0 0;
+        }
+
+        .mini-tree {
+            position: relative;
+            display: inline-block;
+            width: 1.8vw;
+            height: 3.9vw;
+
+            div, span {
+                position: absolute;
+            }
+            div {
+                display: inline-block;
+                position: absolute;
+                z-index: 1;
+                border-radius: 50%;
+                background-color: $light-brown;
+                transform: translate(-0.2vw, 0vw);
+                width: 0.4vw;
+                height: 0.4vw;
+
+                &.one {transform: translate(-0.2vw, 0vw)}
+                &.two {transform: translate(0.5vw, 0.5vw)}
+                &.three {transform: translate(-0.9vw, 0.5vw)}
+                &.four {transform: translate(0.5vw, 1.4vw)}
+                &.five {transform: translate(-0.9vw, 1.4vw)}
+                &.six {transform: translate(-0.2vw, 1.9vw)}
+                &.seven {transform: translate(0.5vw, 2.35vw)}
+                &.eight {transform: translate(-0.9vw, 2.35vw)}
+                &.nine {transform: translate(-0.2vw, 2.75vw)}
+                &.ten {transform: translate(-0.2vw, 3.5vw)}
+            }
+
+            span {
+                display: inline-block;
+                position: absolute;
+                background-color: $light-brown;
+                transform: translate(-0.2vw, 0vw);
+                width: 0.05vw;
+                height: 0.9vw;
+
+                &.zero {transform: translate(0.35vw, 0vw) rotate(-53deg)}
+                &.one {transform: translate(-0.4vw, 0vw) rotate(53deg)}
+                &.two {transform: translate(-0.02vw, 0.1vw); height: 2vw}
+                &.three {transform: translate(0vw, 0vw) rotate(90deg); height: 1.4vw}
+                &.four {transform: translate(0.35vw, 2.3vw) rotate(58deg); height: 0.9vw}
+                &.five {transform: translate(0.68vw, 0.65vw); height: 0.9vw}
+                &.six {transform: translate(-0.35vw, 0.65vw) rotate(-30deg); height: 1.5vw}
+                &.seven {transform: translate(-0.72vw, 0.65vw); height: 0.9vw}
+                &.eight {transform: translate(-0.36vw, 1.4vw) rotate(-50deg); height: 1vw}
+                &.nine {transform: translate(0.3vw, 1.4vw) rotate(50deg); height: 1vw}
+                &.ten {transform: translate(0.68vw, 1.55vw); height: 0.9vw}
+                &.eleven {transform: translate(0vw, 0.9vw) rotate(90deg); height: 1.4vw}
+                &.twelve {transform: translate(-0.75vw, 1.5vw); height: 1.1vw}
+                &.thirteen {transform: translate(0.36vw, 1.9vw) rotate(-55deg); height: 1vw}
+                &.fourteen {transform: translate(-0.03vw, 2vw); height: 1vw}
+                &.fifteen {transform: translate(-0.48vw, 1.9vw) rotate(55deg); height: 1vw}
+                &.sixteen {transform: translate(0vw, 1.85vw) rotate(90deg); height: 1.4vw}
+                &.seventeen {transform: translate(0.35vw, 0.55vw) rotate(30deg); height: 1.55vw}
+                &.eighteen {transform: translate(0.35vw, 2.4vw) rotate(32deg); height: 1.45vw}
+                &.nineteen {transform: translate(-0.4vw, 2.3vw) rotate(-58deg); height: 0.9vw}
+                &.twenty {transform: translate(-0.38vw, 2.4vw) rotate(-32deg); height: 1.45vw}
+                &.twenty-one {transform: translate(-0.02vw, 2.8vw); height: 1vw}
+            }
+        }
+    }
+}
