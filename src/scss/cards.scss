@@ -13,7 +13,7 @@
 
     h1 {
         color: $light-cream;
-        margin-top: 2vw;
+        margin: 2vw 0 0.05vw 0;
     }
 
     .card-mask {
@@ -30,53 +30,6 @@
             height: auto;
             transform-origin: center center;
             transform: scale(1);
-        }
-    }
-}
-
-.example-pairing-section {
-    margin: 0.75vw 0 1vw 0;
-    .card-thumbs {
-        margin: 0 0.1vw 0 0;
-        div {
-            overflow: hidden;
-            border-radius: 0.15vw;
-            width: 2.5vw;
-            height: 3.95vw;
-            align-items: center;
-            justify-content: center;
-            margin: 0 0.3vw 0 0;
-            border: 0.05vw solid $dark-brown;
-        }
-        img {
-            width: 100.05%;
-            height: auto;
-            transform-origin: center center;
-            transform: scale(1);
-        }
-    }
-    
-    .card-description {
-        strong {
-            margin-bottom: 0.5vw;
-            display: inline-block;
-        }
-        h6 {
-            padding-left: 0.25vw;
-        }
-        .symbol {
-            width: 0.5vw;
-            height: 0.5vw;
-
-            &.mars {
-                background: url(../assets/images/icons/icon-mars.svg) 0 center no-repeat;
-                background-size: 100%;
-            }
-
-            &.scorpio {
-                background: url(../assets/images/icons/icon-scorpio.svg) 0 center no-repeat;
-                background-size: 100%;
-            }
         }
     }
 }

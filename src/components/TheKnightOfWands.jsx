@@ -1,10 +1,11 @@
+import CardSelect from './CardSelect'
 import knightOfWands from '../assets/images/cards/minor-arcana/wands/medium_kw.jpg'
 import fiveOfCups from '../assets/images/cards/minor-arcana/cups/medium_5c.jpg'
 
 import MiniTree from '../components/MiniTree'
 import Tetragrammaton from '../components/Tetragrammaton'
 
-function KnightOfWands() {
+function TheKnightOfWands({ pages, activePage, changePage }) {
     return (
         <>
             <section className='left'>
@@ -18,9 +19,7 @@ function KnightOfWands() {
                     In a reading this card can indicate passionate leadership, sudden action or an urgent creative drive.
                 </p>
                 <p>
-                    <strong>
-                        Its warning is that courage without judgement can become brutality, fanaticism or reckless expenditure of energy.
-                    </strong>
+                    Its warning is that courage without judgement can become brutality, fanaticism or reckless expenditure of energy.
                 </p>
                 <p>
                     The question is not whether there is enough force, but whether there is a clear purpose to direct it.
@@ -81,6 +80,11 @@ function KnightOfWands() {
                     <h1>Knight of Wands</h1>
                     <div className="flex-group card-mask flex-align-center">
                         <img src={knightOfWands} alt="" />
+                        <CardSelect
+                            pages={pages}
+                            activePage={activePage}
+                            changePage={changePage}
+                        />
                     </div>
                     <MiniTree />
                     <Tetragrammaton />
@@ -98,9 +102,9 @@ function KnightOfWands() {
                 <h1 className="section-heading symbolism">Symbolism</h1>
                 <p>
                     <strong>Card colours and their meaning</strong><br />
-                    Orange-red: Explosive energy, passion and fierce determination.
-                    Orange: Enthusiasm, ambition and unstoppable momentum.
-                    Golden yellow: Vitality, confidence and creative power.
+                    Orange-red: Explosive energy, passion & fierce determination.<br />
+                    Orange: Enthusiasm, ambition and unstoppable momentum.<br />
+                    Golden yellow: Vitality, confidence and creative power.<br />
                     Black: Fierceness and uncompromising strength.
                 </p>
 
@@ -162,4 +166,4 @@ function KnightOfWands() {
     )
 }
 
-export default KnightOfWands
+export default TheKnightOfWands

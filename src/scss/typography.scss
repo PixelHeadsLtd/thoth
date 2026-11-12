@@ -1,15 +1,5 @@
 @use './vars' as *;
 
-body {
-   font-family: 'franklin_gothic_bookregular';
-   font-weight: 400;
-   color: $dark-brown;
-   font-size: 0.625vw;
-   line-height: 0.75vw;
-   margin: 0;
-   padding: 0;
-}
-
 h1, h2, h3, h4, h5, strong {
    font-synthesis: none;
 }

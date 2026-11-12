@@ -1,0 +1,160 @@
+    @use './vars' as *;
+
+    //-------------------------------------------------------------------------------
+    //-------------------------------------------------------------------------------
+    // ----------------------------------- Planets -----------------------------------
+    .mercury {
+        background: url(../assets/images/icons/icon-mercury.svg) center no-repeat;
+        background-size: 70%;
+    }
+
+    .venus {
+        background: url(../assets/images/icons/icon-venus.svg) center no-repeat;
+        background-size: 90%;
+    }
+
+    .mars {
+        background: url(../assets/images/icons/icon-mars.svg) center no-repeat;
+        background-size: 100%;
+    }
+
+    .jupiter {
+        background: url(../assets/images/icons/icon-jupiter.svg) center no-repeat;
+        background-size: 90%;
+    }
+
+    .saturn {
+        background: url(../assets/images/icons/icon-saturn.svg) center no-repeat;
+        background-size: 75%;
+    }
+
+    //-------------------------------------------------------------------------------
+    //-------------------------------------------------------------------------------
+    // ----------------------------------- Zodiac -----------------------------------
+    .aries {
+        background: url(../assets/images/icons/icon-aries.svg) center no-repeat;
+        background-size: 100%;
+    }
+
+    .taurus {
+        background: url(../assets/images/icons/icon-taurus.svg) center no-repeat;
+        background-size: 74%;
+    }
+
+    .gemini {
+        background: url(../assets/images/icons/icon-gemini.svg) center no-repeat;
+        background-size: 90%;
+    }
+
+    .cancer {
+      background: url(../assets/images/icons/icon-cancer.svg) center no-repeat;
+      background-size: 90%;
+    }
+
+    .leo {
+      background: url(../assets/images/icons/icon-leo.svg) center no-repeat;
+      background-size: 100%;
+    }
+
+    .virgo {
+        background: url(../assets/images/icons/icon-virgo.svg) center no-repeat;
+        background-size: 95%;
+    }
+
+    .libra {
+        background: url(../assets/images/icons/icon-libra.svg) center no-repeat;
+        background-size: 80%;
+    }
+
+    .scorpio {
+        background: url(../assets/images/icons/icon-scorpio.svg) center no-repeat;
+        background-size: 110%;
+    }
+
+    .sagittarius {
+        background: url(../assets/images/icons/icon-sagittarius.svg) center no-repeat;
+        background-size: 100%;
+    }
+
+    .capricorn {
+        background: url(../assets/images/icons/icon-capricorn.svg) center no-repeat;
+        background-size: 80%;
+    }
+
+    .aquarius {
+        background: url(../assets/images/icons/icon-aquarius.svg) center no-repeat;
+        background-size: 100%;
+    }
+
+    .pisces {
+        background: url(../assets/images/icons/icon-pisces.svg) center no-repeat;
+        background-size: 80%;
+    }
+
+    
+    //-------------------------------------------------------------------------------
+    //-------------------------------------------------------------------------------
+    // ----------------------------- Section Headings -------------------------------
+
+    .section-heading {
+        padding: 0 0 0 2.5vw;
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 2vw;
+
+        &.interpretation {
+        background-image: url(../assets/images/icons/icon-interpretation.svg);
+        }
+
+        &.example-pairing {
+        background-image: url(../assets/images/icons/icon-example-pairing.svg);
+        }
+
+        &.element.fire-of-fire {
+        background-image: url(../assets/images/icons/icon-fire-of-fire.svg);
+        }
+
+        &.element.fire-of-water {
+        background-image: url(../assets/images/icons/icon-fire-of-water.svg);
+        }
+
+        &.element.fire-of-air {
+        background-image: url(../assets/images/icons/icon-fire-of-air.svg);
+        }
+
+        &.element.fire-of-earth {
+        background-image: url(../assets/images/icons/icon-fire-of-earth.svg);
+        }
+
+        &.element.water-of-fire {
+        background-image: url(../assets/images/icons/icon-water-of-fire.svg);
+        }
+
+        &.element.water-of-water {
+        background-image: url(../assets/images/icons/icon-water-of-water.svg);
+        }
+
+        &.element.water-of-air {
+        background-image: url(../assets/images/icons/icon-water-of-air.svg);
+        }
+
+        &.element.water-of-earth {
+        background-image: url(../assets/images/icons/icon-water-of-earth.svg);
+        }
+
+        &.element.air-of-fire {
+        background-image: url(../assets/images/icons/icon-air-of-fire.svg);
+        }
+
+        &.symbolism {
+        background-image: url(../assets/images/icons/icon-symbolism.svg);
+        }
+
+        &.zodiac {
+        background-image: url(../assets/images/icons/icon-zodiac.svg);
+        }
+
+        &.celestial-attribution {
+        background-image: url(../assets/images/icons/icon-celestial-att.svg);
+        }
+    }

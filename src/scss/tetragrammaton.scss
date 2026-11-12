@@ -11,5 +11,21 @@
         path {
             fill: #8C6E4E;
         }
+
+        &.yod svg {
+            width: 0.75vw;
+            height: auto
+        }
+
+        &.he svg,
+        &.he-final svg {
+            width: 0.82vw;
+            height: auto
+        }
+
+        &.vau svg {
+            width: 0.55vw;
+            height: auto
+        }
     }
 }

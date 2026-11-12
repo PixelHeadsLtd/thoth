@@ -1,0 +1,18 @@
+@use './vars' as *;
+
+  .tree-of-life {
+    .active {
+      width: 34%;
+      text-align: center;
+
+      h1 {
+          line-height: 1vw;
+      }
+
+      img {
+        cursor: pointer;
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+  }

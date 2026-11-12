@@ -85,3 +85,127 @@
         }
     }
 }
+
+// ---------------- Tetragrammaton - Colour Switching -------------------
+// ALL KNIGHTS SIT IN (YOD)
+.knight-of-wands, .knight-of-cups, .knight-of-swords, .knight-of-disks,
+.ace-of-wands, .two-of-wands, .three-of-wands, .four-of-wands, .five-of-wands, .six-of-wands, .seven-of-wands, .eight-of-wands, .nine-of-wands, .ten-of-wands {
+    &.active { .tetragrammaton { .yod { path { fill: $red; } h3 { color: $light-cream }}} } }
+// ALL QUEENS SIT IN (HE)
+.queen-of-wands, .queen-of-cups, .queen-of-swords, .queen-of-disks,
+.ace-of-cups, .two-of-cups, .three-of-cups, .four-of-cups, .five-of-cups, .six-of-cups, .seven-of-cups, .eight-of-cups, .nine-of-cups, .ten-of-cups {
+    &.active { .tetragrammaton { .he { path { fill: $blue; } h3 { color: $light-cream }}} } }
+// ALL PRINCES SIT IN (VAU)
+.prince-of-wands, .prince-of-cups, .prince-of-swords, .prince-of-disks,
+.ace-of-swords, .two-of-swords, .three-of-swords, .four-of-swords, .five-of-swords, .six-of-swords, .seven-of-swords, .eight-of-swords, .nine-of-swords, .ten-of-swords {
+    &.active { .tetragrammaton { .vau { path { fill: $yellow; } h3 { color: $light-cream }}} } }
+// ALL PRINCES SIT IN (HE-FINAL)
+.princess-of-wands, .princess-of-cups, .princess-of-swords, .princess-of-disks,
+.ace-of-disks, .two-of-disks, .three-of-disks, .four-of-disks, .five-of-disks, .six-of-disks, .seven-of-disks, .eight-of-disks, .nine-of-disks, .ten-of-disks {
+    &.active { .tetragrammaton { .he-final { path { fill: $ochre; } h3 { color: $light-cream }}} } }
+
+
+// ---------------- Mini Tree of Life - Sepheroth Switching ----------------
+// KNIGHTS - SEPHIROTH NUMBER (TWO)
+.knight-of-wands, .knight-of-cups, .knight-of-swords, .knight-of-disks {
+    &.active { .mini-tree-wrapper.fire { div.two { background-color: $red; } h3, h4 { color: $light-cream }} } }
+// QUEENS - SEPHIROTH NUMBER (THREE)
+.queen-of-wands, .queen-of-cups, .queen-of-swords, .queen-of-disks {
+    &.active { .mini-tree-wrapper.water { div.three { background-color: $blue; } h3, h4 { color: $light-cream }} } }
+// PRINCES - SEPHIROTH NUMBER (SIX)
+.prince-of-wands, .prince-of-cups, .prince-of-swords, .prince-of-disks {
+    &.active { .mini-tree-wrapper.air { div.six { background-color: $yellow; } h3, h4 { color: $light-cream }} } }
+// PRINCESSES - SEPHIROTH NUMBER (TEN)
+.princess-of-wands, .princess-of-cups, .princess-of-swords, .princess-of-disks {
+    &.active { .mini-tree-wrapper.earth { div.ten { background-color: $ochre; } h3, h4 { color: $light-cream }} } }
+
+// TWOS - SEPHIROTH NUMBER (TWO) - SAME AS KNIGHTS BUT ACROSS ALL FOUR ELEMENTS
+.two-of-wands {
+    &.active { .mini-tree-wrapper.fire { div.two { background-color: $red; } h3, h4 { color: $light-cream }} } }
+.two-of-cups {
+    &.active { .mini-tree-wrapper.water { div.two { background-color: $blue; } h3, h4 { color: $light-cream }} } }
+.two-of-swords {
+    &.active { .mini-tree-wrapper.air { div.two { background-color: $yellow; } h3, h4 { color: $light-cream }} } }
+.two-of-disks {
+    &.active { .mini-tree-wrapper.earth { div.two { background-color: $ochre; } h3, h4 { color: $light-cream }} } }
+
+// THREES - SEPHIROTH NUMBER (THREE) - SAME AS QUEENS BUT ACROSS ALL FOUR ELEMENTS
+.three-of-wands {
+    &.active { .mini-tree-wrapper.fire { div.three { background-color: $red; } h3, h4 { color: $light-cream }} } }
+.three-of-cups {
+    &.active { .mini-tree-wrapper.water { div.three { background-color: $blue; } h3, h4 { color: $light-cream }} } }
+.three-of-swords {
+    &.active { .mini-tree-wrapper.air { div.three { background-color: $yellow; } h3, h4 { color: $light-cream }} } }
+.three-of-disks {
+    &.active { .mini-tree-wrapper.earth { div.three { background-color: $ochre; } h3, h4 { color: $light-cream }} } }
+
+// FOURS - SEPHIROTH NUMBER (FOUR)
+.four-of-wands {
+    &.active { .mini-tree-wrapper.fire { div.four { background-color: $red; } h3, h4 { color: $light-cream }} } }
+.four-of-cups {
+    &.active { .mini-tree-wrapper.water { div.four { background-color: $blue; } h3, h4 { color: $light-cream }} } }
+.four-of-swords {
+    &.active { .mini-tree-wrapper.air { div.four { background-color: $yellow; } h3, h4 { color: $light-cream }} } }
+.four-of-disks {
+    &.active { .mini-tree-wrapper.earth { div.four { background-color: $ochre; } h3, h4 { color: $light-cream }} } }
+
+// FIVES - SEPHIROTH NUMBER (FIVE)
+.five-of-wands {
+    &.active { .mini-tree-wrapper.fire { div.five { background-color: $red; } h3, h4 { color: $light-cream }} } }
+.five-of-cups {
+    &.active { .mini-tree-wrapper.water { div.five { background-color: $blue; } h3, h4 { color: $light-cream }} } }
+.five-of-swords {
+    &.active { .mini-tree-wrapper.air { div.five { background-color: $yellow; } h3, h4 { color: $light-cream }} } }
+.five-of-disks {
+    &.active { .mini-tree-wrapper.earth { div.five { background-color: $ochre; } h3, h4 { color: $light-cream }} } }
+
+// SIXES - SEPHIROTH NUMBER (SIX)
+.six-of-wands {
+    &.active { .mini-tree-wrapper.fire { div.six { background-color: $red; } h3, h4 { color: $light-cream }} } }
+.six-of-cups {
+    &.active { .mini-tree-wrapper.water { div.six { background-color: $blue; } h3, h4 { color: $light-cream }} } }
+.six-of-swords {
+    &.active { .mini-tree-wrapper.air { div.six { background-color: $yellow; } h3, h4 { color: $light-cream }} } }
+.six-of-disks {
+    &.active { .mini-tree-wrapper.earth { div.six { background-color: $ochre; } h3, h4 { color: $light-cream }} } }
+
+// SEVENS - SEPHIROTH NUMBER (SEVEN)
+.seven-of-wands {
+    &.active { .mini-tree-wrapper.fire { div.seven { background-color: $red; } h3, h4 { color: $light-cream }} } }
+.seven-of-cups {
+    &.active { .mini-tree-wrapper.water { div.seven { background-color: $blue; } h3, h4 { color: $light-cream }} } }
+.seven-of-swords {
+    &.active { .mini-tree-wrapper.air { div.seven { background-color: $yellow; } h3, h4 { color: $light-cream }} } }
+.seven-of-disks {
+    &.active { .mini-tree-wrapper.earth { div.seven { background-color: $ochre; } h3, h4 { color: $light-cream }} } }
+
+// EIGHTS - SEPHIROTH NUMBER (EIGHT)
+.eight-of-wands {
+    &.active { .mini-tree-wrapper.fire { div.eight { background-color: $red; } h3, h4 { color: $light-cream }} } }
+.eight-of-cups {
+    &.active { .mini-tree-wrapper.water { div.eight { background-color: $blue; } h3, h4 { color: $light-cream }} } }
+.eight-of-swords {
+    &.active { .mini-tree-wrapper.air { div.eight { background-color: $yellow; } h3, h4 { color: $light-cream }} } }
+.eight-of-disks {
+    &.active { .mini-tree-wrapper.earth { div.eight { background-color: $ochre; } h3, h4 { color: $light-cream }} } }
+
+// NINES - SEPHIROTH NUMBER (NINE)
+.nine-of-wands {
+    &.active { .mini-tree-wrapper.fire { div.nine { background-color: $red; } h3, h4 { color: $light-cream }} } }
+.nine-of-cups {
+    &.active { .mini-tree-wrapper.water { div.nine { background-color: $blue; } h3, h4 { color: $light-cream }} } }
+.nine-of-swords {
+    &.active { .mini-tree-wrapper.air { div.nine { background-color: $yellow; } h3, h4 { color: $light-cream }} } }
+.nine-of-disks {
+    &.active { .mini-tree-wrapper.earth { div.nine { background-color: $ochre; } h3, h4 { color: $light-cream }} } }
+
+// TENS - SEPHIROTH NUMBER (TEN)
+.v-of-wands {
+    &.active { .mini-tree-wrapper.fire { div.ten { background-color: $red; } h3, h4 { color: $light-cream }} } }
+.ten-of-cups {
+    &.active { .mini-tree-wrapper.water { div.ten { background-color: $blue; } h3, h4 { color: $light-cream }} } }
+.ten-of-swords {
+    &.active { .mini-tree-wrapper.air { div.ten { background-color: $yellow; } h3, h4 { color: $light-cream }} } }
+.ten-of-disks {
+    &.active { .mini-tree-wrapper.earth { div.ten { background-color: $ochre; } h3, h4 { color: $light-cream }} } }
+    

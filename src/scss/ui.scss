@@ -1,0 +1,122 @@
+
+@use './vars' as *;
+
+html, body {
+  background-color: $black;
+  padding: 0;
+  margin: 0;
+  font-family: 'franklin_gothic_bookregular';
+  font-weight: 400;
+  color: $dark-brown;
+  font-size: 0.6vw;
+  line-height: 0.75vw;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0.8% auto auto auto;
+  width: 66vw;
+  height: 47.83vw;
+  background-image: url('../assets/images/background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  > article {
+    display: none;
+    pointer-events: none;
+
+    &.active {
+      display: flex;
+      pointer-events: auto;
+      animation: fade-in 0.5s ease-out both;
+    }
+
+    &.leaving > article.active {
+      animation: fade-out 0.5s ease-in both;
+    }
+  }
+
+  .divider {
+    padding: 0.5vw 0 1vw 0;
+    div {
+      background-color: $dark-brown;
+      display: flex;
+      width: 0.45vw;
+      height: 0.45vw;
+      border-radius: 50%;
+    }
+    span {
+      display: flex;
+      width: calc(100% - 0.9vw);
+      height: 0.04vw;
+      background-color: $dark-brown;
+    }
+  }
+
+  .left, .right {
+    width: 16vw;
+  }
+
+  .left {
+    margin-right: 1.5vw
+  }
+
+  .right {
+    margin-left: 1.5vw
+  }
+
+  .middle {
+    margin-top: 0.75vw;
+  }
+
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wrapper > article.active,
+  .wrapper.leaving > article.active {
+    animation: none;
+  }
+}
+
+// Custom Scrollbars
+body * {
+    // Firefox
+    scrollbar-width: thin;
+    scrollbar-color: $dark-brown #000;
+
+    // Chrome, Edge, Safari
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $dark-brown;
+        border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: $light-brown;
+    }
+
+    &::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+}
+
+

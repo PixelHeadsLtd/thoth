@@ -1,0 +1,16 @@
+@use './vars' as *;
+
+  .zodiac-section {
+    margin-top: 0.5vw;
+    section {
+      margin-bottom: 0.25vw;
+    }
+    strong {
+      padding-left: 0.5vw;
+    }
+    .icon {
+      width: 1vw;
+      height: 1vw;
+    }
+  }
+  
